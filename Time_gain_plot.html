@@ -3,7 +3,7 @@
 <html>
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Time gain plot</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Time_gain_plot</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -14567,13 +14567,25 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput">
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput">
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Time-gain-table-and-plot-(Temporary)">Time gain table and plot (Temporary)<a class="anchor-link" href="#Time-gain-table-and-plot-(Temporary)">¶</a></h2><h3 id="as-soon-as-possible-the-figure-will-be-improved-(this-version-is-just-to-observe-the-comparison)">as soon as possible the figure will be improved (this version is just to observe the comparison)<a class="anchor-link" href="#as-soon-as-possible-the-figure-will-be-improved-(this-version-is-just-to-observe-the-comparison)">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput">
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput">
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[58]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[65]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 <div>
 <style scoped="">
@@ -14593,11 +14605,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <thead>
 <tr style="text-align: right;">
 <th></th>
-<th>name</th>
-<th>time_old</th>
-<th>b%_old</th>
-<th>time_new</th>
-<th>b%_new</th>
+<th>Earthquake</th>
+<th>Previous times (hrs)</th>
+<th>b% (previous)</th>
+<th>Present times (hrs)</th>
+<th>b% (present)</th>
 </tr>
 </thead>
 <tbody>
@@ -14606,69 +14618,97 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <td>Ridgecrest 6.4</td>
 <td>18.280512</td>
 <td>52</td>
-<td>25.022544</td>
-<td>82</td>
+<td>10.981608</td>
+<td>72.1698</td>
 </tr>
 <tr>
 <th>1</th>
 <td>Ridgecrest 7.1</td>
 <td>52.864800</td>
 <td>108</td>
-<td>7.045200</td>
-<td>120</td>
+<td>3.454152</td>
+<td>138.3020</td>
 </tr>
 <tr>
 <th>2</th>
 <td>Ridgecrest 6.4 (S)</td>
 <td>3.522528</td>
 <td>63</td>
-<td>22.786728</td>
-<td>60</td>
+<td>22.788000</td>
+<td>61.4580</td>
 </tr>
 <tr>
 <th>3</th>
 <td>Ridgecrest 7.1 (S)</td>
 <td>25.351200</td>
 <td>119</td>
-<td>3.317616</td>
-<td>117</td>
+<td>3.317520</td>
+<td>117.4380</td>
 </tr>
 <tr>
 <th>4</th>
-<td>Kumamoto 6.5</td>
-<td>2.478178</td>
-<td>85</td>
-<td>3.889344</td>
-<td>79</td>
+<td>Ridgecrest 6.4 (H)</td>
+<td>NaN</td>
+<td>63</td>
+<td>10.032288</td>
+<td>81.9410</td>
 </tr>
 <tr>
 <th>5</th>
-<td>Kumamoto 7.1</td>
-<td>62.611200</td>
-<td>115</td>
-<td>6.499200</td>
-<td>136</td>
+<td>Ridgecrest 7.1 (H)</td>
+<td>NaN</td>
+<td>119</td>
+<td>3.185664</td>
+<td>135.8730</td>
 </tr>
 <tr>
 <th>6</th>
-<td>Amatrice 6.2</td>
-<td>91.950408</td>
-<td>74</td>
-<td>23.988000</td>
-<td>92</td>
+<td>Kumamoto 6.5</td>
+<td>2.478178</td>
+<td>85</td>
+<td>3.818400</td>
+<td>80.5450</td>
 </tr>
 <tr>
 <th>7</th>
+<td>Kumamoto 7.1</td>
+<td>62.611200</td>
+<td>115</td>
+<td>6.260400</td>
+<td>135.3000</td>
+</tr>
+<tr>
+<th>8</th>
+<td>Amatrice 6.2</td>
+<td>91.950408</td>
+<td>74</td>
+<td>9.922584</td>
+<td>89.7470</td>
+</tr>
+<tr>
+<th>9</th>
 <td>Norcia 6.6</td>
 <td>28.939200</td>
 <td>87</td>
-<td>27.859200</td>
-<td>88</td>
+<td>9.638520</td>
+<td>93.2000</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>*(S) = Shelly catalog [David R. Shelly; A High‐Resolution Seismic Catalog for the Initial 2019 Ridgecrest Earthquake Sequence: Foreshocks, Aftershocks, and Faulting Complexity. Seismological Research Letters 2020;; 91 (4): 1971–1978. doi: <a href="https://doi-org.ezproxy.unibo.it/10.1785/0220190309">https://doi-org.ezproxy.unibo.it/10.1785/0220190309</a>]</p>
+<p>*(H) = Haukkson Catalog [2011 - E. Hauksson, W. Yang, and P. Shearer: Waveform Relocated Earthquake Catalog for Southern California (1981 to 2022)]</p>
 </div>
 </div>
 </div>
@@ -14720,9 +14760,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html">
-<div> <div class="plotly-graph-div" id="5883df08-8040-4561-9f32-e2f551a46eb8" style="height:525px; width:100%;"></div> <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("5883df08-8040-4561-9f32-e2f551a46eb8")) {                    Plotly.newPlot(                        "5883df08-8040-4561-9f32-e2f551a46eb8",                        [{"marker":{"color":"blue","size":12,"symbol":"circle"},"mode":"markers","name":"Old method","x":["Ridgecrest 6.4","Ridgecrest 7.1","Ridgecrest 6.4 (S)","Ridgecrest 7.1 (S)","Kumamoto 6.5","Kumamoto 7.1","Amatrice 6.2","Norcia 6.6"],"y":[18.280512,52.8648,3.5225280000000003,25.3512,2.4781776,62.6112,91.950408,28.9392],"type":"scatter"},{"marker":{"color":"purple","size":12,"symbol":"square"},"mode":"markers","name":"new method","x":["Ridgecrest 6.4","Ridgecrest 7.1","Ridgecrest 6.4 (S)","Ridgecrest 7.1 (S)","Kumamoto 6.5","Kumamoto 7.1","Amatrice 6.2","Norcia 6.6"],"y":[25.022543999999996,7.0451999999999995,22.786728,3.317616,3.8893440000000004,6.4992,23.988,27.8592],"type":"scatter"}],                        {"template":{"data":{"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"yaxis":{"tickfont":{"family":"Arial","size":14},"title":{"text":"Hours after M6+","font":{"family":"Arial","size":14}},"tickmode":"array","tickvals":[0,12,24,36,48,60,72,84,96,108],"ticktext":["0 hrs","12 hrs","24 hrs","36 hrs","48 hrs","60 hrs","72 hrs","84 hrs","96 hrs","108 hrs"],"showgrid":true,"gridcolor":"grey","showline":true,"gridwidth":1.5,"linecolor":"black","linewidth":2},"xaxis":{"tickfont":{"family":"Arial","size":14},"showgrid":true,"gridcolor":"grey","showline":true,"gridwidth":1.5,"linecolor":"black","linewidth":2},"showlegend":true,"plot_bgcolor":"white"},                        {"responsive": true}                    ).then(function(){
+<div> <div class="plotly-graph-div" id="072d1830-afee-4886-86a0-a3169bc1ce55" style="height:525px; width:100%;"></div> <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("072d1830-afee-4886-86a0-a3169bc1ce55")) {                    Plotly.newPlot(                        "072d1830-afee-4886-86a0-a3169bc1ce55",                        [{"hovertext":["Earthquake: Ridgecrest 6.4<br>Previous times (hrs): 18.280512<br>B%: 52.00%","Earthquake: Ridgecrest 7.1<br>Previous times (hrs): 52.8648<br>B%: 108.00%","Earthquake: Ridgecrest 6.4 (S)<br>Previous times (hrs): 3.5225280000000003<br>B%: 63.00%","Earthquake: Ridgecrest 7.1 (S)<br>Previous times (hrs): 25.3512<br>B%: 119.00%","Earthquake: Ridgecrest 6.4 (H)<br>Previous times (hrs): nan<br>B%: 63.00%","Earthquake: Ridgecrest 7.1 (H)<br>Previous times (hrs): nan<br>B%: 119.00%","Earthquake: Kumamoto 6.5<br>Previous times (hrs): 2.4781776<br>B%: 85.00%","Earthquake: Kumamoto 7.1<br>Previous times (hrs): 62.6112<br>B%: 115.00%","Earthquake: Amatrice 6.2<br>Previous times (hrs): 91.950408<br>B%: 74.00%","Earthquake: Norcia 6.6<br>Previous times (hrs): 28.9392<br>B%: 87.00%"],"marker":{"color":"blue","size":12,"symbol":"circle"},"mode":"markers","name":"Previous times","x":["Ridgecrest 6.4","Ridgecrest 7.1","Ridgecrest 6.4 (S)","Ridgecrest 7.1 (S)","Ridgecrest 6.4 (H)","Ridgecrest 7.1 (H)","Kumamoto 6.5","Kumamoto 7.1","Amatrice 6.2","Norcia 6.6"],"y":[18.280512,52.8648,3.5225280000000003,25.3512,null,null,2.4781776,62.6112,91.950408,28.9392],"type":"scatter"},{"hovertext":["Earthquake: Ridgecrest 6.4<br>Present times (hrs): 10.981608<br>B%: 72.17%","Earthquake: Ridgecrest 7.1<br>Present times (hrs): 3.4541519999999997<br>B%: 138.30%","Earthquake: Ridgecrest 6.4 (S)<br>Present times (hrs): 22.788<br>B%: 61.46%","Earthquake: Ridgecrest 7.1 (S)<br>Present times (hrs): 3.31752<br>B%: 117.44%","Earthquake: Ridgecrest 6.4 (H)<br>Present times (hrs): 10.032288<br>B%: 81.94%","Earthquake: Ridgecrest 7.1 (H)<br>Present times (hrs): 3.185664<br>B%: 135.87%","Earthquake: Kumamoto 6.5<br>Present times (hrs): 3.8183999999999996<br>B%: 80.55%","Earthquake: Kumamoto 7.1<br>Present times (hrs): 6.260400000000001<br>B%: 135.30%","Earthquake: Amatrice 6.2<br>Present times (hrs): 9.922584<br>B%: 89.75%","Earthquake: Norcia 6.6<br>Present times (hrs): 9.63852<br>B%: 93.20%"],"marker":{"color":"purple","size":12,"symbol":"square"},"mode":"markers","name":"Current times","x":["Ridgecrest 6.4","Ridgecrest 7.1","Ridgecrest 6.4 (S)","Ridgecrest 7.1 (S)","Ridgecrest 6.4 (H)","Ridgecrest 7.1 (H)","Kumamoto 6.5","Kumamoto 7.1","Amatrice 6.2","Norcia 6.6"],"y":[10.981608,3.4541519999999997,22.788,3.31752,10.032288,3.185664,3.8183999999999996,6.260400000000001,9.922584,9.63852],"type":"scatter"}],                        {"template":{"data":{"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"yaxis":{"tickfont":{"family":"Arial","size":14},"title":{"text":"Hours after M6+","font":{"family":"Arial","size":14}},"tickmode":"array","tickvals":[0,12,24,36,48,60,72,84,96,108],"ticktext":["0 hrs","12 hrs","24 hrs","36 hrs","48 hrs","60 hrs","72 hrs","84 hrs","96 hrs","108 hrs"],"showgrid":true,"gridcolor":"grey","showline":true,"gridwidth":1.5,"linecolor":"black","linewidth":2},"xaxis":{"tickfont":{"family":"Arial","size":14},"showgrid":true,"gridcolor":"grey","showline":true,"gridwidth":1.5,"linecolor":"black","linewidth":2},"showlegend":true,"plot_bgcolor":"white"},                        {"responsive": true}                    ).then(function(){
                             
-var gd = document.getElementById('5883df08-8040-4561-9f32-e2f551a46eb8');
+var gd = document.getElementById('072d1830-afee-4886-86a0-a3169bc1ce55');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -14749,6 +14789,8 @@ if (outputEl) {{
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput">
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput">
 </div>
 </body>
