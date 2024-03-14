@@ -14665,6 +14665,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
                 // Mostra il contenuto protetto se la password è corretta
                 document.getElementById("passwordForm").style.display = "none";
                 document.getElementById("contentProtetto").style.display = "block";
+                document.getElementById("richiestaAccesso").style.display = "none";
             } else {
                 alert("Incorrect password. Try again.");
             }
@@ -14676,7 +14677,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <!-- Richiesta password -->
 <h2>Please enter the password to access the content:</h2>
 <form id="passwordForm">
-<input id="passwordInput" placeholder="Password" type="password"/>
 <button id="passwordSubmit" onclick="verificaPassword()" type="button">Submit</button>
 </form>
 <!-- Contenuto protetto -->
