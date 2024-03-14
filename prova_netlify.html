@@ -14662,15 +14662,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
             // Verifica se l'hash della password inserita corrisponde all'hash della password corretta
             if (hashPasswordInserita === hashPasswordCorretta) {
-                var linkProtetto = document.getElementById("linkProtetto");
-                linkProtetto.href = "https://raw.githack.com/Biondini/new_FTLS/main/Staking_100d/Staking_general_results.html";
-                linkProtetto.style.display = "inline"; // Mostra il link solo se la password è corretta
-
+                // Mostra il contenuto protetto se la password è corretta
+                document.getElementById("passwordForm").style.display = "none";
+                document.getElementById("contentProtetto").style.display = "block";
                 // Nascondi la richiesta di accesso
                 document.getElementById("richiestaAccesso").style.display = "none";
-
-                // Simula un clic sul link per aprirlo automaticamente
-                linkProtetto.click();
             } else {
                 alert("Incorrect password. Try again.");
             }
