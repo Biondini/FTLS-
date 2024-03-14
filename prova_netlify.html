@@ -14666,6 +14666,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
                 document.getElementById("passwordForm").style.display = "none";
                 document.getElementById("contentProtetto").style.display = "block";
                 document.getElementById("richiestaAccesso").style.display = "none";
+                // Nascondi l'elemento h2, che è il messaggio di login
+                document.querySelector("#container h2").style.display = "none";
             } else {
                 alert("Incorrect password. Try again.");
             }
