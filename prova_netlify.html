@@ -14645,7 +14645,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
         }
         #contentProtetto {
             display: none;
-            padding-top: 20px;
+            padding-top: 20px; /* Aggiungi spazio sopra il contenuto protetto */
         }
     </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
@@ -14674,11 +14674,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <body>
 <div id="container">
 <!-- Richiesta password -->
-<h2>Click Log in and enter the password to access the restricted area.</h2>
-<button onclick="verificaPassword()">Log in</button>
+<h2>Please enter the password to access the content:</h2>
+<form id="passwordForm">
+<input id="passwordInput" placeholder="Password" type="password"/>
+<button id="passwordSubmit" onclick="verificaPassword()" type="button">Submit</button>
+</form>
 <!-- Contenuto protetto -->
 <div id="contentProtetto">
-<!-- Inserisci qui il contenuto protetto -->
             % {html_content}
         </div>
 </div>
