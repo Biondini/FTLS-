@@ -14645,7 +14645,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
         }
         #contentProtetto {
             display: none;
-            padding-top: 20px; /* Aggiungi spazio sopra il contenuto protetto */
+            padding-top: 20px;
         }
     </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
@@ -14662,9 +14662,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
             // Verifica se l'hash della password inserita corrisponde all'hash della password corretta
             if (hashPasswordInserita === hashPasswordCorretta) {
-                // Mostra il contenuto protetto se la password è corretta
-                document.getElementById("passwordForm").style.display = "none";
-                document.getElementById("contentProtetto").style.display = "block";
+                var linkProtetto = document.getElementById("linkProtetto");
+                linkProtetto.href = "https://raw.githack.com/Biondini/new_FTLS/main/Staking_100d/Staking_general_results.html";
+                linkProtetto.style.display = "inline"; // Mostra il link solo se la password è corretta
+
+                // Nascondi la richiesta di accesso
+                document.getElementById("richiestaAccesso").style.display = "none";
+
+                // Simula un clic sul link per aprirlo automaticamente
+                linkProtetto.click();
             } else {
                 alert("Incorrect password. Try again.");
             }
@@ -14674,13 +14680,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <body>
 <div id="container">
 <!-- Richiesta password -->
-<h2>Please enter the password to access the content:</h2>
-<form id="passwordForm">
-<input id="passwordInput" placeholder="Password" type="password"/>
-<button id="passwordSubmit" onclick="verificaPassword()" type="button">Submit</button>
-</form>
+<h2>Click Log in and enter the password to access the restricted area.</h2>
+<button onclick="verificaPassword()">Log in</button>
 <!-- Contenuto protetto -->
 <div id="contentProtetto">
+<!-- Inserisci qui il contenuto protetto -->
             % {html_content}
         </div>
 </div>
