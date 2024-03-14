@@ -14623,7 +14623,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Password Protected Page</title>
+<title>Password Protected Link</title>
 <style>
         body {
             font-family: Arial, sans-serif;
@@ -14634,17 +14634,14 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
         #container {
             padding-top: 50px;
         }
-        #passwordForm {
+        #linkContainer {
             margin-top: 20px;
         }
-        #passwordInput {
-            margin-right: 10px;
-        }
-        #passwordSubmit {
-            margin-top: 10px;
-        }
-        #contentProtetto {
-            display: none; /* Nascondi il contenuto protetto inizialmente */
+        #linkProtetto {
+            display: none;
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
         }
     </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
@@ -14661,9 +14658,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
             // Verifica se l'hash della password inserita corrisponde all'hash della password corretta
             if (hashPasswordInserita === hashPasswordCorretta) {
-                // Mostra il contenuto protetto se la password è corretta
-                document.getElementById("passwordForm").style.display = "none";
-                document.getElementById("contentProtetto").style.display = "block";
+                var linkProtetto = document.getElementById("linkProtetto");
+                linkProtetto.href = "https://raw.githack.com/Biondini/new_FTLS/main/Staking_100d/Staking_general_results.html";
+                linkProtetto.style.display = "inline"; // Mostra il link solo se la password è corretta
+
+                // Simula un clic sul link per aprirlo automaticamente
+                linkProtetto.click();
             } else {
                 alert("Incorrect password. Try again.");
             }
