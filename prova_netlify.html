@@ -14667,7 +14667,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
                 document.getElementById("contentProtetto").style.display = "block";
                 document.getElementById("richiestaAccesso").style.display = "none";
                 // Nascondi l'elemento h2, che è il messaggio di login
-                document.querySelector("#container h2").style.display = "none";
+                document.querySelector("loginMessage").style.display = "none";
             } else {
                 alert("Incorrect password. Try again.");
             }
@@ -14677,7 +14677,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <body>
 <div id="container">
 <!-- Richiesta password -->
-<h2>Please enter the password to access the content:</h2>
+<h2 id="loginMessage">Please enter the password to access the content:</h2>
 <form id="passwordForm">
 <button id="passwordSubmit" onclick="verificaPassword()" type="button">Submit</button>
 </form>
