@@ -14691,7 +14691,85 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>&lt;!DOCTYPE html&gt;</p>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FTLS retrospective analysis</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
+<script>
+        // Funzione per verificare la password
+        function verificaPassword() {
+            var passwordInserita = prompt("Please enter the password:");
+
+            // Calcola l'hash SHA-256 della password inserita
+            var hashPasswordInserita = sha256(passwordInserita);
+
+            // Sostituisci con l'hash della password reale
+            var hashPasswordCorretta = "34588431ce028b7bba35321684fa7037db84962ab49f12935ca462b1fc349297"; 
+
+            // Verifica se l'hash della password inserita corrisponde all'hash della password corretta
+            if (hashPasswordInserita === hashPasswordCorretta) {
+                // Mostra il contenuto protetto se la password è corretta
+                document.getElementById("contentProtetto").style.display = "block";
+            } else {
+                alert("Incorrect password. Try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>FTLS retrospective analysis</h1>
+<div id="passwordForm">
+<h2>Please enter the password to access the content:</h2>
+<button onclick="verificaPassword()">Submit</button>
+</div>
+<div id="contentProtetto" style="display: none;">
+<h2>Tutorial to download and install FTLS code (pre-release).</h2>
+<h3>Download the .rar file containing the FTLS code according to your system.</h3>
+<h3>The .rar file require a password to be extracted.</h3>
+<table>
+<tr>
+<th>Installation for Windows</th>
+<th>Installation for MacOS</th>
+</tr>
+<tr>
+<td><a download="" href="FTLS_retrospective_analysis_pre_release_windows.rar">Download for Windows</a></td>
+<td><a download="" href="FTLS_retrospective_analysis_pre_release_macos.rar">Download for MacOS</a></td>
+</tr>
+<tr>
+<td>
+<p>Instructions for Windows:</p>
+<ul>
+<li>Download the file for Windows.</li>
+<li>Extract the contents of the downloaded .rar file.</li>
+<li>Follow the installation instructions provided in the extracted folder's <code>readme.txt</code>.</li>
+</ul>
+</td>
+<td>
+<p>Instructions for MacOS:</p>
+<ul>
+<li>Download the file for MacOS.</li>
+<li>Extract the contents of the downloaded .rar file.</li>
+<li>Follow the installation instructions provided in the extracted folder's <code>readme.txt</code>.</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput">
 </div>
 </body>
